@@ -1,0 +1,27 @@
+@font-face {
+    font-family: JetBrainsMono-Regular;
+    src: url(../fonts/JetBrainsMono/JetBrainsMono-Regular.ttf);
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+:root {
+    /* Opacity */
+    --opacity-16: opacity(0.16);
+    --opacity-20: opacity(0.2);
+    --opacity-24: opacity(0.24);
+    --opacity-40: opacity(0.4);
+    --opacity-50: opacity(0.5);
+    --opacity-60: opacity(0.6);
+    --opacity-72: opacity(0.72);
+    --opacity-80: opacity(0.8);
+}

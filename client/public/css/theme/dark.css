@@ -1,0 +1,16 @@
+:root {
+    /* Page Background */
+    --bg-page-primary: #181C20;
+    --bg-page-secondary: #0E1114;
+    /* Block Background */
+    --bg-block-primary: #21262B;
+    --bg-block-secondary: #353C43;
+    --bg-block-tertiary: #4A545C;
+    --bg-block-1: #616C76;
+    --bg-block-2: #778592;
+    --bg-block-3: #8FA0AF;
+    --bg-block-overlay: rgba(0, 0, 0, 80%);
+    --bg-block-overlay-secondary: rgba(0, 0, 0, 60%);
+    --bg-block-overlay-light: rgba(0, 0, 0, 20%);
+    --bg-block-overlay-light-secondary: rgba(0, 0, 0, 40%);
+}

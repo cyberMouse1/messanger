@@ -1,0 +1,146 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-page-secondary);
+}
+
+.wrapper__menu__servers {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    max-width: 5%;
+    margin: 10px;
+    background-color: var(--bg-page-primary);
+    border-radius: 20px;
+    overflow-y: auto;
+}
+
+/* Server Menu Item */
+.server__menu__item {
+    display: flex;
+    margin: 5px;
+    transition: border-radius 0.3s ease-out;
+    cursor: pointer;
+    justify-content: center;
+}
+
+/* Icon server__menu__item */
+.icon__menu__item {
+    display: flex;
+    width: 56px;
+    height: 56px;
+    background-color: var(--bg-block-primary);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: border-radius .3s ease-out;
+}
+
+.icon__menu__item img {
+    width: 32px;
+    height: 32px;
+}
+
+.server__menu__item:hover .icon__menu__item {
+    border-radius: 40%;
+}
+
+/* Dividing Line in Wrapper Servers */
+.dividing__line {
+    width: 64px;
+    height: 4px;
+    background-color: var(--bg-block-secondary);
+    margin: 10px 0;
+    border-radius: 20px;
+    align-self: center;
+}
+
+/* Bottom Section in Wrapper Servers */
+.bottom__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+
+/* Menu Info in Server */
+.wrapper__menu__info__server {
+    width: 17%;
+    height: 20%;
+    margin: 10px;
+    background-color: var(--bg-page-primary);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.background__image__server {
+    height: 75%;
+    width: 100%;
+    text-align: center;
+}
+
+.background__image__server img {
+    max-width: 100%;
+    height: auto;
+}
+
+.info_server > p {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: JetBrainsMono-Regular;
+}
+
+/* Menu Channels in Server */
+.wrapper__menu__channels__server {
+    width: 17%;
+    margin: 10px;
+    background-color: var(--bg-page-primary);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.channel__item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    transition: background-color 0.2s ease-out, transform .3s ease-in-out;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.channel__icon {
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.channel__icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.channel__text {
+    color: var(--text-color);
+    font-size: 16px;
+    color: white;
+    font-family: JetBrainsMono-Regular;
+}
+
+.channel__item:hover {
+    background-color: var(--bg-block-primary);
+    transform: scale(1.05);
+}
