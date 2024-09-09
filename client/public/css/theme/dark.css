@@ -1,8 +1,8 @@
 :root {
-    /* Page Background */
+    /* Page Backgrounds */
     --bg-page-primary: #181C20;
     --bg-page-secondary: #0E1114;
-    /* Block Background */
+    /* Block Backgrounds */
     --bg-block-primary: #21262B;
     --bg-block-secondary: #353C43;
     --bg-block-tertiary: #4A545C;
@@ -13,4 +13,11 @@
     --bg-block-overlay-secondary: rgba(0, 0, 0, 60%);
     --bg-block-overlay-light: rgba(0, 0, 0, 20%);
     --bg-block-overlay-light-secondary: rgba(0, 0, 0, 40%);
+    /* Text Colors */
+    --text-title: #EEF1F4;
+    --text-primary: #EEF1F4; 
+    --text-secondary: #ABBBC9;
+    --text-tertiary: #778592;
+    --text-white: #0E1114;
+    --text-white-on-color: #FFFFFF; 
 }
