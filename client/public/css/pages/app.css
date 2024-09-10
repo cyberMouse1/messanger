@@ -7,7 +7,7 @@
     background-color: var(--bg-page-secondary);
 }
 
-.wrapper__menu__servers {
+.wrapperMenuServers {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
@@ -19,7 +19,7 @@
 }
 
 /* Server Menu Item */
-.server__menu__item {
+.serverMenuItem {
     display: flex;
     margin: 5px;
     transition: border-radius 0.3s ease-out;
@@ -28,7 +28,7 @@
 }
 
 /* Icon server__menu__item */
-.icon__menu__item {
+.iconMenuItem {
     display: flex;
     width: 56px;
     height: 56px;
@@ -39,17 +39,17 @@
     transition: border-radius .3s ease-out;
 }
 
-.icon__menu__item img {
+.iconMenuItem img {
     width: 32px;
     height: 32px;
 }
 
-.server__menu__item:hover .icon__menu__item {
+.serverMenuItem:hover .iconMenuItem {
     border-radius: 40%;
 }
 
 /* Dividing Line in Wrapper Servers */
-.dividing__line {
+.dividingLine {
     width: 50px;
     height: 4px;
     background-color: var(--bg-block-secondary);
@@ -59,7 +59,7 @@
 }
 
 /* Bottom Section in Wrapper Servers */
-.bottom__section {
+.bottomSection {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -67,7 +67,7 @@
 }
 
 /* Menu Info and Channels in Server */
-.wrapper__menu__server__info__channels {
+.wrapperMenuServerInfoChannels {
     display: flex;
     flex-direction: column;
     max-width: 20%;
@@ -76,7 +76,7 @@
 }
 
 /* Menu Info in Server */
-.wrapper__menu__info__server {
+.wrapperMenuInfoServer {
     width: auto;
     height: 20%;
     margin-bottom: 10px;
@@ -89,18 +89,18 @@
     padding: 10px;
 }
 
-.background__image__server {
+.backgroundImageServer {
     height: 75%;
     width: 100%;
     text-align: center;
 }
 
-.background__image__server img {
+.backgroundImageServer img {
     max-width: 100%;
     height: auto;
 }
 
-.info_server > p {
+.infoServer > p {
     width: 100%;
     text-align: center;
     color: white;
@@ -109,7 +109,7 @@
 }
 
 /* Menu Channels in Server */
-.wrapper__menu__channels__server {
+.wrapperMenuChannelsServer {
     width: auto;
     height: 100%;
     background-color: var(--bg-page-primary);
@@ -122,7 +122,7 @@
     flex-grow: 1;
 }
 
-.channel__item {
+.channelItem {
     display: flex;
     align-items: center;
     margin: 5px 0;
@@ -132,30 +132,30 @@
     border-radius: 7px;
 }
 
-.channel__icon {
+.channelIcon {
     margin-right: 10px;
     margin-left: 5px;
 }
 
-.channel__icon img {
+.channelIcon img {
     width: 20px;
     height: 20px;
 }
 
-.channel__text {
+.channelText {
     color: var(--text-color);
     font-size: 14px;
     color: white;
     font-family: JetBrainsMono-Regular;
 }
 
-.channel__item:hover {
+.channelItem:hover {
     background-color: var(--bg-block-primary);
     transform: scale(1.05);
 }
 
 /* User Section */
-.wrapper__menu__user {
+.wrapperMenuUser {
     max-height: 15%;
     height: 10%;
     background-color: var(--bg-page-primary);
@@ -167,37 +167,37 @@
     margin-top: 10px;
 }
 
-.user__avatar {
+.userAvatar {
     width: 36px;
     height: 36px;
     margin-left: 10px;
 }
 
-.user__avatar img {
+.userAvatar img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
 }
 
-.user__text {
+.userText {
     text-align: center;
+    margin-right: 15px;
 }
 
-.username__user {
-    color: white;
-    font-size: 18px;
+.usernameUser {
+    color: var(--text-title);
+    font-size: 16px;
     font-family: JetBrainsMono-Regular;
-    margin: 0;
 }
 
-.description__user {
-    color: var(--text-secondary);
+.descriptionUser {
+    color: var(--text-tertiary);
     font-size: 12px;
     font-family: JetBrainsMono-Regular;
-    margin: 0;
+    float: left;
 }
 
-.settings__user {
+.settingsUser {
     width: 32px;
     height: 32px;
     padding: 3px;
@@ -206,18 +206,18 @@
     transition: background-color .15s ease-out;
 }
 
-.settings__user img {
+.settingsUser img {
     width: 100%;
     height: 100%;
     text-align: center;
 }
 
-.settings__user:hover {
+.settingsUser:hover {
     background-color: var(--bg-block-primary);
 }
 
 /* Menu Chat in Server */
-/* .wrapper__menu__chat {
+.wrapperMenuChat {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -227,4 +227,113 @@
     margin: 10px;
     box-sizing: border-box;
     overflow-y: auto;
-} */
+}
+
+.messagesContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    background-color: var(--softBordersDisabled);
+    border: 1px var(--componentBorders) solid;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.messagesContainer > :first-child {
+    margin-top: auto;
+}
+
+.message {
+    min-height: min-content;
+    min-width: 100px;
+    max-width: 500px;
+    margin: 10px;
+    padding: 5px;
+    align-self: flex-start;
+    word-wrap: break-word;
+    white-space: normal;
+    display: flex;
+    flex-direction: column;
+}
+
+.me {
+    align-self: flex-end;
+}
+
+.messageAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.messageHeader {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    color: grey;
+    margin-bottom: 5px;
+}
+
+.messageAuthor {
+    font-size: 14px;
+    font-family: JetBrainsMono-Light;
+    color: var(--text-title)
+}
+
+.messageTime {
+    font-size: 14px;
+    font-family: JetBrainsMono-Light;
+    color: var(--text-title);
+}
+
+.messageText {
+    color: var(--text-title);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--bg-block-primary);
+    font-family: JetBrainsMono-Regular;
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+.inputField {
+    display: flex;
+    padding: 10px;
+}
+
+.inputMessage {
+    flex-grow: 1;
+    padding: 14px;
+    border-radius: 8px;
+    margin: 0 10px 10px 10px;
+    background-color: var(--bg-block-primary);
+    border: none;
+    color: var(--text-title);
+}
+
+.sendButton {
+    width: 38px;
+    height: 38px;
+    padding: 3px;
+    background-color: var(--bg-block-primary);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color, border-radius .5s ease-in-out;
+}
+
+.sendButton img {
+    width: 100%;
+    height: 100%;
+    transition: background-color, border-radius .5s ease-in-out;
+}
+
+.sendButton:hover {
+    border-radius: 5px;
+    background-color: var(--bg-block-secondary);
+}
